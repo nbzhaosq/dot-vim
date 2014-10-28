@@ -88,7 +88,15 @@ let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 let NERDTreeShowBookmarks=1
 let NERDTreeWinPos = "left"
 
+" nerdcommenter
+let NERDSpaceDelims=1
+let NERCompactSexycoms=1
+
 let g:neocomplete#enable_at_startup = 1
+
+nmap <F4> :NERDTreeToggle<cr>
+nmap <F5> :TagbarToggle<cr>
+nmap <F6> :GundoToggle<cr>
 
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
@@ -105,6 +113,11 @@ set laststatus=2
 set t_Co=256
 
 
-
+autocmd BufReadPost *
+      \ if ! exists("g:leave_my_cursor_position_alone") |
+      \     if line("'\"") > 0 && line ("'\"") <= line("$") |
+      \         exe "normal g'\"" |
+      \     endif |
+      \ endif
 
 
