@@ -1,0 +1,110 @@
+"-------------------- 
+" vundle config 
+"-------------------- 
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+"-------------------
+" IDE features
+"-------------------
+
+" snipmate dependancy
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+
+" common tools
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'ervandew/supertab'
+
+"-------------------
+" IDE features
+"-------------------
+Plugin 'humiaozuzu/TabBar'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Lokaltog/vim-powerline'
+
+"-------------------
+" Auto Complete
+"-------------------
+Plugin 'Shougo/neocomplete.vim'
+" C++ plugin
+Plugin 'OmniCppComplete'
+
+" useful features
+Plugin 'sjl/gundo.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Lokaltog/vim-easymotion'
+
+" colorscheme
+" gvim only
+Plugin 'github-theme'
+
+call vundle#end()
+
+set nocp
+filetype plugin indent on
+syntax on
+
+set background=dark
+colorscheme ron
+set number
+
+" indent
+set autoindent
+set smartindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+" search
+set incsearch
+"set highlight 	" conflict with highlight current line
+set ignorecase
+set smartcase
+
+" Tagbar
+let g:tagbar_left=0
+let g:tagbar_width=30
+let g:tagbar_autofocus = 1
+let g:tagbar_sort = 0
+let g:tagbar_compact = 1
+autocmd BufReadPost *.cpp,*.c,*.h,*.go call tagbar#autoopen()
+
+" Nerd Tree
+let NERDChristmasTree=0
+let NERDTreeWinSize=30
+let NERDTreeChDirMode=2
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
+" let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
+let NERDTreeShowBookmarks=1
+let NERDTreeWinPos = "left"
+
+let g:neocomplete#enable_at_startup = 1
+
+" easier navigation between split windows
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+" highlight current line
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
+
+set laststatus=2
+set t_Co=256
+
+
+
+
+
