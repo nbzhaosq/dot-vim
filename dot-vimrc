@@ -25,7 +25,7 @@ Plugin 'ervandew/supertab'
 "-------------------
 " IDE features
 "-------------------
-Plugin 'humiaozuzu/TabBar'
+"Plugin 'humiaozuzu/TabBar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
@@ -70,6 +70,12 @@ set incsearch
 "set highlight 	" conflict with highlight current line
 set ignorecase
 set smartcase
+
+" minibuf
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
 
 " Tagbar
 let g:tagbar_left=0
