@@ -17,10 +17,14 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 
-" common tools
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'ervandew/supertab'
+" snippet like plugin
+" Plugin 'garbas/vim-snipmate'
+" Plugin 'honza/vim-snippets'
+" Plugin 'drmingdrmer/xptemplate'
+Plugin 'SirVer/ultisnips'
+
+" complete with tab
+" Plugin 'ervandew/supertab'
 
 "-------------------
 " IDE features
@@ -34,9 +38,13 @@ Plugin 'Lokaltog/vim-powerline'
 "-------------------
 " Auto Complete
 "-------------------
-Plugin 'Shougo/neocomplete.vim'
+"Plugin 'Shougo/neocomplete.vim'
+Plugin 'Valloric/YouCompleteMe'
 " C++ plugin
-Plugin 'OmniCppComplete'
+" Plugin 'OmniCppComplete'
+
+" Python
+Plugin 'davidhalter/jedi'
 
 " useful features
 Plugin 'sjl/gundo.vim'
@@ -98,7 +106,7 @@ let NERDTreeWinPos = "left"
 let NERDSpaceDelims=1
 let NERCompactSexycoms=1
 
-let g:neocomplete#enable_at_startup = 1
+"let g:neocomplete#enable_at_startup = 1
 
 nmap <F4> :NERDTreeToggle<cr>
 nmap <F5> :TagbarToggle<cr>
