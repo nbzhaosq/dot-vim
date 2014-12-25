@@ -12,15 +12,17 @@ nbzhaosq's vim configuration
 
 ## C/C++ 
 work with YCM
+#### requirements :
+YCM-PATH/install.sh --clang-completer
 
 ## Python
 work with jedi
-### requirements : 
+#### requirements : 
 pip install jedi
 
 ## GOlang
-### work with vim-go
-requirements :
+work with vim-go
+#### requirements :
 go get -u github.com/nsf/gocode
 
 ## Notification
