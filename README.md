@@ -25,6 +25,11 @@ work with vim-go
 #### requirements :
 go get -u github.com/nsf/gocode
 
+## Clojure
+work with lein repl
+#### requirements :
+lein
+
 ## Notification
 vim needs python-plugin on while compiled
 
