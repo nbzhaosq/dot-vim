@@ -7,7 +7,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+" Plugin 'gmarik/Vundle.vim'
 
 "-------------------
 " IDE features
@@ -99,7 +99,7 @@ set smartcase
 
 " tab setup
 nmap <F3> :tabnew<cr>
-nmap <c-tab> :tabNext<cr>
+nmap <s-tab> :tabNext<cr>
 
 " UltiSnips work with YCM
 let g:UltiSnipsExpandTrigger="<c-\\>"
