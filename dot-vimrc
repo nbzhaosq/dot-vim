@@ -50,6 +50,11 @@ Plugin 'davidhalter/jedi'
 Plugin 'fatih/vim-go'
 "Plugin 'dgryski/vim-godef'
 
+"Clojure
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-classpath'
+
 " useful features
 Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/nerdcommenter'
@@ -107,7 +112,7 @@ let g:tagbar_width=30
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_compact = 1
-autocmd BufReadPost *.cpp,*.c,*.h,*.go,*.py call tagbar#autoopen()
+" autocmd BufReadPost *.cpp,*.c,*.h,*.go,*.py call tagbar#autoopen()
 
 " Nerd Tree
 let NERDChristmasTree=0
