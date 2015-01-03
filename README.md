@@ -20,10 +20,15 @@ work with jedi
 #### requirements : 
 pip install jedi
 
-## GOlang
+## Golang
 work with vim-go
 #### requirements :
 go get -u github.com/nsf/gocode
+
+## Java
+javacomplete
+#### requirements :
+jdk version > 1.1
 
 ## Clojure
 work with lein repl
