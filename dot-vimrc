@@ -80,10 +80,10 @@ set number
 " indent
 set autoindent
 set smartindent
+set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set expandtab
 
 " search
 set incsearch
@@ -148,6 +148,9 @@ set laststatus=2
 
 " jedi setup
 autocmd FileType python setlocal completeopt-=preview
+
+autocmd FileType html setlocal softtabstop=2
+autocmd FileType html setlocal shiftwidth=2
 
 autocmd BufReadPost *
       \ if ! exists("g:leave_my_cursor_position_alone") |
