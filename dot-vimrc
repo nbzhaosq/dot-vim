@@ -45,6 +45,8 @@ Plugin 'Valloric/YouCompleteMe'
 
 " Python
 Plugin 'davidhalter/jedi'
+" django
+Plugin 'lambdalisue/vim-django-support'
 
 " GOlang
 Plugin 'fatih/vim-go'
@@ -154,6 +156,10 @@ set laststatus=2
 
 " jedi setup
 autocmd FileType python setlocal completeopt-=preview
+
+" django
+" g:django_support#auto_activate_on_filetype=0
+let g:django_support#auto_activate=0
 
 autocmd FileType html setlocal softtabstop=2
 autocmd FileType html setlocal shiftwidth=2
