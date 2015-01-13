@@ -55,11 +55,15 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-classpath'
 
+" Markdown
+Plugin 'tpope/vim-markdown'
+
 " useful features
 Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
 
 " colorscheme
 " gvim only
@@ -162,6 +166,9 @@ let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" markdown
+autocmd BufNewFile, BufReadPost *.md filetype=markdown
 
 autocmd BufReadPost *
       \ if ! exists("g:leave_my_cursor_position_alone") |
