@@ -60,6 +60,9 @@ Plugin 'tpope/vim-classpath'
 " Markdown
 Plugin 'tpope/vim-markdown'
 
+" JavaScript
+Plugin 'pangloss/vim-javascript'
+
 " useful features
 Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/nerdcommenter'
