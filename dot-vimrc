@@ -64,6 +64,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
+Plugin 'thinca/vim-quickrun'
 
 " colorscheme
 " gvim only
