@@ -1,6 +1,13 @@
 nbzhaosq's vim configuration
 ============================
 
+##useage
+git clone https://github.com/nbzhaosq/dot-vim.git
+
+git submodule update --init --recursive
+
+- the second command will automatically download Vundle.vim as submodule
+
 ## main plugins
 - Vundle
 - YouCompleteMe (YCM)  
@@ -25,6 +32,9 @@ work with vim-go
 #### requirements :
 go get -u github.com/nsf/gocode
 
+## Nodejs
+work with ternjs_for_vim
+
 ## Java
 javacomplete
 #### requirements :
@@ -37,6 +47,7 @@ lein
 
 ## Notification
 vim needs python-plugin on while compiled
+some linux dist's default vim not compiled with python-plugin on
 
 on Ubuntu, the vim can be installed directly use "sudo apt-get install vim"
 

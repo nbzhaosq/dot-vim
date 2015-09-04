@@ -62,6 +62,7 @@ Plugin 'tpope/vim-markdown'
 
 " JavaScript
 Plugin 'pangloss/vim-javascript'
+Plugin 'marijnh/tern_for_vim'
 
 " useful features
 Plugin 'sjl/gundo.vim'
