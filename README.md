@@ -4,7 +4,15 @@ nbzhaosq's vim configuration
 ##useage
 git clone https://github.com/nbzhaosq/dot-vim.git
 
+cd dot-vim
+
 git submodule update --init --recursive
+
+(on windows, clone the project to C:/User/{your username}/ and rename folder to ".vim" and copy the dot-vimrc file to C:/User/{your username}/.vimrc,
+remember you may need git command in your Path )
+
+open your favorite vim editor, enter the follow: ":PluginInstall"
+
 
 - the second command will automatically download Vundle.vim as submodule
 
@@ -17,14 +25,20 @@ git submodule update --init --recursive
 - poweline
 
 
-## C/C++ 
+## C/C++
 work with YCM
 #### requirements :
 YCM-PATH/install.sh --clang-completer
 
 ## Python
 work with jedi
-#### requirements : 
+#### requirements :
+pip install jedi
+
+## Ruby
+use [vim-ruby](https://github.com/vim-ruby/vim-ruby)
+work with jedi
+#### requirements :
 pip install jedi
 
 ## Golang

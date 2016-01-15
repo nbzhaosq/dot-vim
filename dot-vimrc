@@ -1,6 +1,6 @@
-"-------------------- 
-" vundle config 
-"-------------------- 
+"--------------------
+" vundle config
+"--------------------
 set nocompatible
 filetype off
 
@@ -38,15 +38,18 @@ Plugin 'Lokaltog/vim-powerline'
 "-------------------
 " Auto Complete
 "-------------------
-"Plugin 'Shougo/neocomplete.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/neocomplete.vim'
+"Plugin 'Valloric/YouCompleteMe'
 " C++ plugin
 " Plugin 'OmniCppComplete'
 
 " Python
-Plugin 'davidhalter/jedi'
+"Plugin 'davidhalter/jedi'
 " django
-Plugin 'lambdalisue/vim-django-support'
+"Plugin 'lambdalisue/vim-django-support'
+
+" Ruby
+Plugin 'vim-ruby/vim-ruby'
 
 " GOlang
 Plugin 'fatih/vim-go'
@@ -104,10 +107,10 @@ set ignorecase
 set smartcase
 
 " minibuf
-" let g:miniBufExplMapWindowNavVim = 1 
-" let g:miniBufExplMapWindowNavArrows = 1 
-" let g:miniBufExplMapCTabSwitchBufs = 1 
-" let g:miniBufExplModSelTarget = 1 
+" let g:miniBufExplMapWindowNavVim = 1
+" let g:miniBufExplMapWindowNavArrows = 1
+" let g:miniBufExplMapCTabSwitchBufs = 1
+" let g:miniBufExplModSelTarget = 1
 
 " tab setup
 nmap <F3> :tabnew<cr>
@@ -187,5 +190,3 @@ autocmd BufReadPost *
       \         exe "normal g'\"" |
       \     endif |
       \ endif
-
-
