@@ -2,23 +2,23 @@ nbzhaosq's vim configuration
 ============================
 
 ##useage
-git clone https://github.com/nbzhaosq/dot-vim.git
+git clone https://github.com/nbzhaosq/dot-vim.git .vim
 
-cd dot-vim
+cd .vim
 
 git submodule update --init --recursive
+- the third command will automatically download Vundle.vim as submodule
 
+(on *nix, you can ln -s `pwd`/.vim/dot-vimrc .vimrc; on windows, you should copy the dot-vimrc file as .vimrc manually)
 (on windows, clone the project to C:/User/{your username}/ and rename folder to ".vim" and copy the dot-vimrc file to C:/User/{your username}/.vimrc,
 remember you may need git command in your Path )
 
 open your favorite vim editor, enter the follow: ":PluginInstall"
 
 
-- the second command will automatically download Vundle.vim as submodule
-
 ## main plugins
 - Vundle
-- YouCompleteMe (YCM)  
+- YouCompleteMe (YCM)  (this feature need cmake and gcc)
 - ultisnips
 - nerdtree
 - tagbar
